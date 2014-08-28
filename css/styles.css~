@@ -1,0 +1,272 @@
+
+
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../fonts/League_Gothic/league_gothic.eot');
+    src: url('../fonts/League_Gothic/league_gothic.eot') format('embedded-opentype'),
+         url('../fonts/League_Gothic/league_gothic.woff') format('woff'),
+         url('../fonts/League_Gothic/league_gothic.ttf') format('truetype'),
+         url('../fonts/League_Gothic/league_gothic.svg#LeagueGothicRegular') format('svg');
+}
+
+/*body tag*/
+body
+{
+margin:0px;
+padding:0px
+}
+
+
+/*div tag*/
+.flight
+{
+padding:15px;
+margin:auto;
+width:700px;
+height:400px;
+border: 10px solid SaddleBrown;
+background-color:AntiqueWhite;
+top:50px;
+}
+
+/*header tag*/
+h1
+{
+margin:0px;
+padding:0px;
+font-family:'LeagueGothicRegular';
+background-color:#AAC6FF;
+width:700px;
+height:50px;
+border-radius:10px 10px 0px 0px;
+size:70px;
+letter-spacing:2px;
+}
+
+
+/*list items*/
+ul.dates
+{
+margin:0px;
+padding:0px;
+height:50px;
+list-style-type:none;
+display:block;
+width:700px;
+height:50px;
+
+}
+
+ul.dates li
+{
+font-family:'LeagueGothicRegular';
+font-size:30px;
+padding-left:45px;
+height:50px;
+float:left;
+width:80px;
+display:block;
+text-align:center;
+color:green;
+}
+
+/*anchor tag*/
+a
+{
+text-decoration:none;
+}
+
+
+
+
+/*styles for headings like Depart,Arrive etc*/
+ul#head1 li
+{
+margin:0px;
+padding:0px;
+font-size:15px;
+width:100px;
+text-transform:uppercase;
+list-style-type:none;
+display:inline-block;
+color:brown;
+}
+
+
+#msg
+{
+display:none;
+}
+
+/*styles for First Row*/
+
+#information1 ul.data1,ul.data3,ul.data5
+{
+background-color:BurlyWood;
+}
+
+
+#information1 ul.data1 li
+{
+font-size:20px;
+list-style-type:none;
+padding-left:35px;
+display:inline-block;
+}
+
+
+/*styles for Second Row*/
+
+#information1 ul.data2,ul.data4
+{
+background-color:Cornsilk;
+}
+
+
+#information1 ul.data2 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+
+
+
+/*styles for Third Row*/
+
+#information1 ul.data3 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+
+/*styles for Fourth Row*/
+
+#information1 ul.data4 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+/*styles for Fifth Row*/
+
+#information1 ul.data5 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+
+
+/*displaying none*/
+#information1,#information2,#information3,#information4,#information5
+{
+display:none;
+}
+
+
+
+/* tab 2 styles start*/
+
+#information2 ul.data1,ul.data3
+{
+background-color:BurlyWood;
+}
+
+#information1 ul.data2
+{
+background-color:Cornsilk;
+}
+
+#information2 ul.data1 li,ul.data2 li,ul.data3 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+/* tab 2 styles end*/
+
+
+
+/* tab 3 styles start*/
+
+#information3 ul.data1
+{
+background-color:BurlyWood;
+}
+
+#information3 ul.data2
+{
+background-color:Cornsilk;
+}
+
+#information3 ul.data1 li,ul.data2 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+/* tab 3 styles end*/
+
+
+
+/* tab 4 styles start*/
+
+#information4 ul.data1,ul.data3
+{
+background-color:BurlyWood;
+}
+
+#information4 ul.data2,ul.data4
+{
+background-color:Cornsilk;
+}
+
+#information4 ul.data1 li,ul.data2 li,ul.data3 li,ul.data4 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+/* tab 4 styles end*/
+
+
+
+
+/* tab 5 styles start*/
+
+#information5 ul.data1,#information5 ul.data3
+{
+background-color:BurlyWood;
+}
+
+#information5 ul.data2
+{
+background-color:Cornsilk;
+}
+
+#information5 ul.data1 li,ul.data2 li,ul.data3 li
+{
+font-size:20px;
+list-style-type:none;
+display:inline-block;
+padding-left:40px;
+}
+
+/* tab 5 styles end*/

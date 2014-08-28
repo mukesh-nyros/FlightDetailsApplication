@@ -1,0 +1,198 @@
+var tip1,tip2,tip3,tip4,tip5;
+
+$(document ).ready(function(){				//document ready start
+
+
+
+
+/*
+$("li ").mouseover (function(){
+displayTool(this);
+
+});
+
+function displayTool(obj)
+{
+tip1 = document.getElementById("information1").getElementsByTagName("ul").length;
+tip2 = document.getElementById("information2").getElementsByTagName("ul").length;
+tip3 = document.getElementById("information3").getElementsByTagName("ul").length;
+tip4 = document.getElementById("information4").getElementsByTagName("ul").length;
+tip5 = document.getElementById("information5").getElementsByTagName("ul").length;
+ 
+if(obj.id=="d1")
+{
+obj.id.innerHTML= tip1+" "+"Flights";
+}
+else if(obj.id=="d2")
+obj.innerHTML= tip2+" "+"Flights";
+else if(obj.id=="d3")
+obj.innerHTML= tip3+" "+"Flights";
+else if(obj.id=="d4")
+obj.innerHTML= tip4+" "+"Flights";
+else if(obj.id=="d5")
+obj.innerHTML= tip5+" "+"Flights";
+}
+*/	 
+    var month;
+	var d=new Date();
+	   var mon=d.getMonth();
+    var day=d.getDate();
+
+    var month1 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    
+    
+  document.getElementById("date1").innerHTML = month1[mon] + day;
+     d.setDate(day+1);
+     mon=d.getMonth();
+     day=d.getDate();
+  document.getElementById("date2").innerHTML = month1[mon] + (day);
+ 	d.setDate(day+1);
+ 	mon=d.getMonth();
+ 	day=d.getDate();
+  document.getElementById("date3").innerHTML = month1[mon]+ (day);
+   d.setDate(day+1);
+   mon=d.getMonth();
+   day=d.getDate();
+  document.getElementById("date4").innerHTML = month1[mon] + (day);
+   d.setDate(day+1);
+   mon=d.getMonth();
+   day=d.getDate();
+  document.getElementById("date5").innerHTML = month1[mon] + (day);
+
+
+
+/*Highlight lowest element value for tab 1*/
+
+ var x= document.getElementsByClassName("cost1");
+ var x1=Math.min(x[0].value,x[1].value,x[2].value,x[3].value,x[4].value);
+ tip1=x.length;
+
+
+
+  for(var i=0;i<tip1;i++)
+  {
+    if(x[i].value==x1)
+    {
+      
+        document.getElementById(x[i].id).style.backgroundColor="#FF4500";
+                
+    }
+  }
+
+
+$("#d1").attr("title", +tip1+" flights are available");
+
+
+/*Highlight lowest element value for tab 2
+
+var x= document.getElementsByClassName("cost2");
+ var x1=Math.min(x[0].value,x[1].value,x[2].value);
+ tip2=x.length;
+
+
+
+  for(var i=0;i<tip2;i++)
+  {
+    if(x[i].value==x1)
+    {
+      
+        document.getElementById(x[i].id).style.backgroundColor="#FF4500";
+                
+    }
+  }
+
+
+
+$("#d2").attr("title", +tip2+" flights are available");
+
+
+
+/*Highlight lowest element value for tab 3
+
+ var x= document.getElementsByClassName("cost3");
+ var x1=Math.min(x[0].value,x[1].value);
+ tip3=x.length;
+
+
+
+  for(var i=0;i<tip3;i++)
+  {
+    if(x[i].value==x1)
+    {
+      
+       document.getElementById(x[i].id).style.backgroundColor="#FF4500";
+                
+    }
+  }
+
+
+$("#d3").attr("title", +tip3+" flights are available");
+
+
+
+/*Highlight lowest element value for tab 4
+
+ var x= document.getElementsByClassName("cost4");
+ var x1=Math.min(x[0].value,x[1].value,x[2].value,x[3].value);
+ tip4=x.length;
+
+  for(var i=0;i<tip4;i++)
+
+  {
+
+    if(x[i].value==x1)
+
+    {      
+
+       document.getElementById(x[i].id).style.backgroundColor="#FF4500";
+              
+
+    }
+
+  }
+
+
+$("#d4").attr("title", +tip4+" flights are available");
+
+
+
+/*Highlight lowest element value for tab 5
+
+ var x= document.getElementsByClassName("cost5");
+ var x1=Math.min(x[0].value,x[1].value,x[2].value);
+ tip5=x.length;
+  for(var i=0;i<tip5;i++)
+  {
+    if(x[i].value==x1)
+    {      
+       document.getElementById(x[i].id).style.backgroundColor="#FF4500";
+              
+    }
+  }
+
+$("#d5").attr("title", +tip5+" flights are available");
+
+
+*/
+
+
+
+
+/*tooltip
+ $("document").tooltip({
+position: {
+my: "center bottom-20",
+at: "center top",
+using: function( position, feedback ) {
+$( this ).css( position );
+$( "<div>").addClass( "arrow" ) .addClass( feedback.vertical )
+.addClass( feedback.horizontal )
+.appendTo( this );
+
+
+ }
+}
+});*/
+
+
+});/*document ready close*/

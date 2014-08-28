@@ -1,0 +1,298 @@
+
+/* div tag*/
+.flight
+{
+padding:0px;
+border:1px solid;
+margin:auto;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+width:700px;
+height:70px;	
+opacity:0.7;
+background-color:#DA70D6;
+}
+
+h1
+{
+font-size:40px;
+font-weight:250;
+opacity:0.5;
+margin:0px;
+padding:15px;
+}
+
+
+ul.dates
+{
+display:block;
+margin:auto;
+padding:0px;
+width:700px;
+height:50px;
+border-top:1px solid red;
+opacity:0.9;
+}
+ul.dates li
+{
+float:left;
+display:block;
+width:139.9px;
+font-size:30px;
+text-align:center;
+height:50px;
+background-color:#4682B4;
+}
+ ul.dates li a
+{
+text-decoration:none;
+display:block;
+width:112px;
+font-size:25px;
+padding:14px;
+padding-bottom:8px;
+}
+
+
+ul.dates li a:hover
+{
+background-color:white;
+}
+
+ul#head1
+{
+	
+margin:auto;
+padding:0px;
+margin:0px;
+width:700px;
+height:50px;
+border-bottom:1px solid #D1E0E0;
+background-color:#996633;
+opacity:0.7;
+display:none;
+}
+
+
+
+ul#head1 li
+{
+list-style-type:none;
+float:left;
+}
+
+ul#head1 li a
+{
+margin-top:8px;
+text-decoration:none;
+color:black;
+display:block;
+width:110px;
+font-size:18px;
+font-weight:300;
+text-transform:uppercase;
+padding-left:4.6px;
+text-align:center;
+}
+
+
+
+div#information1,div#information2,div#information3,div#information4,div#information5,#message
+{
+display:none;
+}
+
+
+div#information1 ul.data1,ul.data3,ul.data5
+{
+background-color:MintCream ;
+}
+
+div#information1 ul.data2,ul.data4
+{
+background-color:PeachPuff ;
+}
+
+ div#information1 ul.data1,ul.data2,ul.data3,ul.data4,ul.data5
+{
+display:block;
+margin:0px;
+margin:auto;
+padding:0px;
+width:700px;
+height:50px;
+}
+
+div#information2 ul.data1,ul.data3
+{
+background-color:MintCream ;
+}
+
+div#information2 ul.data2
+{
+background-color:PeachPuff ;
+}
+
+div#information2 ul.data1,ul.data2,ul.data3
+{
+display:block;
+margin:0px;
+margin:auto;
+padding:0px;
+width:700px;
+height:50px;
+}
+
+
+div#information3 ul.data1
+{
+background-color:MintCream;
+}
+
+div#information3 ul.data2
+{
+background-color:PeachPuff;
+}
+
+div#information3 ul.data1,ul.data2
+{
+display:block;
+margin:0px;
+margin:auto;
+padding:0px;
+width:700px;
+height:50px;
+}
+
+
+div#information4 ul.data1,ul.data3
+{
+background-color:MintCream;
+}
+
+div#information4 ul.data2,ul.data4
+{
+background-color:PeachPuff;
+}
+
+div#information4 ul.data1,ul.data2,ul.data3,ul.data4
+{
+display:block;
+margin:0px;
+margin:auto;
+padding:0px;
+width:700px;
+height:50px;
+}
+
+
+/*background colors for rows*/
+div#information5 ul.data1,ul.data3
+{
+background-color:MintCream;
+}
+
+div#information5 ul.data2
+{
+background-color:PeachPuff;
+}
+
+
+div#information5 ul.data1,ul.data2,ul.data3
+{
+display:block;
+margin:0px;
+margin:auto;
+padding:0px;
+width:700px;
+height:50px;
+}
+
+/*displaying list items*/
+
+
+ul.data1 li ,ul.data2 li,ul.data3 li ,ul.data4 li,ul.data5 li 
+{
+list-style-type:none;
+float:left;
+}
+ul.data1 li ,ul.data2 li ,ul.data3 li ,ul.data4 li ,ul.data5 li 
+{
+margin-top:7px;
+display:block;
+width:114.6px;
+font-size:23px;
+text-align:center;
+}
+ul.data1 li a,ul.data2 li a,ul.data3 li a,ul.data4 li a,ul.data5 li a
+{
+text-decoration:none;
+color:#000000;
+}
+
+
+
+p#message
+{
+display:none;
+width:700px;
+height:25px;
+margin:auto;
+border:1px solid #D1E0E0;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+}
+
+span.coach,span.firstclass
+{
+color:red;
+}
+
+
+.firstclass,.firstclass2,.firstclass3,.firstclass4,.firstclass5
+{
+margin-left:30px;
+display:block;
+width:70px;
+height:30px;
+border-radius:10px;
+color:red;
+}
+
+/*tooltips styles*/
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  top:-30px; 
+
+  left: 50%;
+  margin-left: -76px;
+  z-index: 999;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="./css/stym.css">
+	<script src="./js/jquery-2.1.1.js"></script>
+
+  </head>
+         <body>
+	<div class="flight">
+	<h1>
+	SELECT A FLIGHT
+	</h1>
+	<ul class="dates">
+	<li id="d1" ><a id="date1"class="tooltips" href="#"><span id="info1">Tooltip</span></a></li>
+
+	<li id="d2" > <a href="#" id="date2" class="tooltips"><span id="info2">hf</span></a></li>
+	<li id="d3" > <a href="#" id="date3" class="tooltips"><span id="info3">fhf</span></a></li>
+	<li id="d4" > <a href="#" id="date4" class="tooltips"><span id="info4">gn</span></a></li>
+	<li id="d5" > <a href="#" id="date5" class="tooltips"><span id="info5">hngh</span></a></li>
+	</ul>
+<p id="message">Loading <span id="msg"></span></p>
+<ul id="head1">	
+<li><a href="#">Depart</a></li>
+<li><a href="#">Arrive</a></li>
+<li><a href="#">Flight #</a></li>
+<li><a href="#">Route</a></li>
+<li><a href="#">First Class</a></li>
+<li><a href="#">Coach</a></li>
+</ul>
+<!-- tab 1 information start-->
+<div id="information1">
+<ul class="data1">
+<li>2:30 PM</li>
+<li>5:18 PM</li>
+<li>347</li>
+<li>Nonstop</li>
+<li class="cost1" id="c1" value="317"><span class="firstclass1">$317</span></li>
+<li><span class="coach">$134</span></li>
+</ul>
+
+<ul class="data2">
+<li>3:15 PM</li>
+<li>5:08 PM</li>
+<li>1946</li>
+<li>2 stops</li>
+<li class="cost1"id="c2"value="276"><span class="firstclass1">$276</span></li>
+<li><span class="coach">$205</span></li>
+</ul>
+
+
+<ul class="data3">
+<li>4:45 PM</li>
+<li>5:22 PM</li>
+<li>1884</li>
+<li>1 stop</li>
+<li class="cost1" id="c3" value="353"><span class="firstclass1">$353</span></li>
+<li><span class="coach">$249</span></li>
+</ul>
+
+
+<ul class="data4">
+<li>5:30 PM</li>
+<li>5:51 PM</li>
+<li>633</li>
+<li>Nonstop</li>
+<li class="cost1" id="c4" value="269"><span class="firstclass1">$269</span></li>
+<li><span class="coach">$232</span></li>
+</ul>
+
+
+<ul class="data5">
+<li>6:15 PM</li>
+<li>7:25 PM</li>
+<li>1478</li>
+<li>Nonstop</li>
+<li class="cost1" id="c5" value="268"><span class="firstclass1">$268</span></li>
+<li><span class="coach">$169</span></li>
+</ul>
+</div>
+<!-- tab 1 information end-->
+
+
+<!-- tab 2 information start-->
+<div id="information2">
+
+
+<ul class="data1">
+<li><a href=#> 2:32PM </a></li>
+<li><a href=#> 5:00PM </a></li>
+<li><a href=#> 348 </a></li>
+<li><a href=#> Nonstop </a></li>
+<li class="cost2" id="c6" value="317"><span class="firstclass2">$317</span></li>
+<li><span class="coach"> $144</span> </li>
+</ul>
+
+<ul class="data2" style="background-color:#FAEBE6" >
+<li><a href=#> 3:16PM </a></li>
+<li><a href=#> 5:09PM </a></li>
+<li><a href=#> 1947 </a></li>
+<li><a href=#> 2 stops </a></li>
+<li class="cost2" id="c7" value="176"> <span class="firstclass2">$176 </span></li>
+<li><span class="coach">  $205</span> </li>
+</ul>
+
+
+<ul class="data3">
+<li><a href=#> 4:46 PM </a></li>
+<li><a href=#> 5:23 PM </a></li>
+<li><a href=#> 1885 </a></li>
+<li><a href=#> 1 stop </a></li>
+<li class="cost2" id="c8"  value="353"> <span class="firstclass2">$353</span></li>
+<li> <span class="coach"> $249</span> </li>
+</ul>
+
+</div>
+<!-- tab 2 information end-->
+
+
+
+<!-- tab 3 information start-->
+
+<div id="information3">
+
+
+<ul class="data1" >
+<li><a href=#> 6:25PM </a></li>
+<li><a href=#> 7:45PM </a></li>
+<li><a href=#> 478 </a></li>
+<li><a href=#> Nonstop </a></li>
+<li class="cost3" id="c9" value="128"> <span class="firstclass3">$128</span></li>
+<li><span class="coach">  $169</span> </li>
+</ul>
+
+<ul class="data2"style="background-color:#FAEBE6">
+<li><a href=#> 5:09PM </a></li>
+<li><a href=#> 5:51PM </a></li>
+<li><a href=#> 369 </a></li>
+<li><a href=#> Nonstop </a></li>
+<li class="cost3" id="c10" value="69"> <span class="firstclass3">$69</span></li>
+<li><span class="coach">  $232</span> </li>
+</ul>
+</div>
+<!-- tab 3 information end-->
+
+
+<!-- tab 4 information start-->
+<div id="information4">
+
+
+<ul class="data1">
+<li><a href=#> 2:45PM </a></li>
+<li><a href=#> 5:08PM </a></li>
+<li><a href=#> 357 </a></li>
+<li><a href=#> Nonstop </a></li>
+<li class="cost4" id="c11" value="317"><span class="firstclass4">$317</span></li>
+<li><span class="coach"> $134</span> </li>
+</ul>
+
+<ul class="data2">
+<li><a href=#> 3:05PM </a></li>
+<li><a href=#> 5:07PM </a></li>
+<li><a href=#> 1947 </a></li>
+<li><a href=#> 2 stops </a></li>
+<li class="cost4" id="c12" value="276"> <span class="firstclass4">$276 </span></li>
+<li><span class="coach">  $205</span> </li>
+</ul>
+
+
+<ul class="data3" style="background-color:#FAEBE6">
+<li><a href=#> 4:05 PM </a></li>
+<li><a href=#> 5:20 PM </a></li>
+<li><a href=#> 1881 </a></li>
+<li><a href=#> 1 stop </a></li>
+<li class="cost4" id="c13" value="153"> <span class="firstclass4">$153</span></li>
+<li> <span class="coach"> $249</span> </li>
+</ul>
+
+
+
+<ul class="data4">
+<li><a href=#> 5:00PM </a></li>
+<li><a href=#> 5:41PM </a></li>
+<li><a href=#> 433 </a></li>
+<li><a href=#> Nonstop </a></li>
+<li class="cost4" id="c14" value="269"> <span class="firstclass4">$269</span></li>
+<li><span class="coach">  $232</span> </li>
+</ul>
+</div>
+
+<!-- tab 4 information end-->
+
+
+
+<!-- tab 5 information start-->
+<div id="information5">
+
+
+<ul class="data1">
+<li><a href=#> 2:45PM </a></li>
+<li><a href=#> 5:08PM </a></li>
+<li><a href=#> 357 </a></li>
+<li><a href=#> Nonstop </a></li>
+<li class="cost5" id="c15" value="317"><span class="firstclass5">$317</span></li>
+<li><span class="coach"> $134</span> </li>
+</ul>
+
+<ul class="data2">
+<li><a href=#> 3:05PM </a></li>
+<li><a href=#> 5:07PM </a></li>
+<li><a href=#> 1947 </a></li>
+<li><a href=#> 2 stops </a></li>
+<li class="cost5" id="c16" value="276"> <span class="firstclass5">$276 </span></li>
+<li><span class="coach">  $205</span> </li>
+</ul>
+
+
+<ul class="data3" style="background-color:#FAEBE6">
+<li><a href=#> 4:05 PM </a></li>
+<li><a href=#> 5:20 PM </a></li>
+<li><a href=#> 1881 </a></li>
+<li><a href=#> 1 stop </a></li>
+<li class="cost5" id="c17"  value="153"> <span class="firstclass5">$153</span></li>
+<li> <span class="coach"> $249</span> </li>
+</ul>
+</div>
+
+<!-- tab 5 information end-->
+
+
+
+
+
+
+</div>
+<script src="./js/flightJq.js"></script>
+</body>
+</html>
